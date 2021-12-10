@@ -1,5 +1,7 @@
 # Hippocampus circuitry
 
+For modelDB version: https://senselab.med.yale.edu/ModelDB/showmodel.cshtml?model=181967
+
 The NEURON code implements a DG-CA3-CA1 network model (100 DG GCs, 2 DG MCs, 2 DG BCs, 1 HC, 100 CA3 PCs, 2 CA3 BCs, 1 CA3 AAC, 1 CA3 OLM cell, 100 CA1 PCs, 1 CA1 AAC, 2 CA1 BCs, and 1 CA1 BSC) on how theta modulated inhibition accounts for the long temporal windows in the entorhinal-hippocampal loop.
 
 Reference:
@@ -29,4 +31,4 @@ is similar to Figure 7D.
 
 20150524: Update from Ted Carnevale: Changed integration method from euler to derivimplicit which is appropriate for simple ion accumulation mechanisms. See Integration methods for SOLVE statements http://www.neuron.yale.edu/phpBB/viewtopic.php?f=28&t=592
 
-20150525: Update from Ted Carnevale: Fixed ca initialization by inserting cai = ca into INITIAL block in cad.mod
+20150525: Update from Ted Carnevale: Fixed `ca` initialization by inserting `cai = ca` into `INITIAL block` in `cad.mod`
